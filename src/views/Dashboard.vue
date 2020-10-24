@@ -7,8 +7,8 @@
         <toolhead-card></toolhead-card>
       </v-col>
       <v-col cols="12" md="6" class="pt-0">
-        <tools-card></tools-card>
         <temperature-card></temperature-card>
+        <tools-card></tools-card>
       </v-col>
     </v-row>
   </v-container>
