@@ -11,8 +11,15 @@
         <!-- Extruder Moves, Tooldhead Position-->
         <!-- <v-container fluid class="pa-0"> -->
           <extruder-moves-widget v-if="!printerPrinting"></extruder-moves-widget>
-          <toolhead-position-widget></toolhead-position-widget>
+          <toolhead-position-widget v-show="!$vuetify.breakpoint.md"></toolhead-position-widget>
         <!-- </v-container> -->
+      </v-col>
+    </v-row>
+
+    <!-- Move this widget down for tablet view -->
+    <v-row v-show="$vuetify.breakpoint.md">
+      <v-col class="pt-0">
+        <toolhead-position-widget></toolhead-position-widget>
       </v-col>
     </v-row>
 
