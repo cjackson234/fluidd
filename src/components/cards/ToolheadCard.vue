@@ -2,7 +2,7 @@
   <v-card color="tertiary" class="mb-4">
     <v-card-title class="quaternary">
       <v-icon left>{{ icons.printer3dNozzle }}</v-icon>
-      <span class="font-weight-light">Toolhead</span>
+      <span class="font-weight-light">Tool</span>
       <v-spacer />
       <v-btn
         v-if="!printerPrinting"
@@ -19,7 +19,7 @@
         :disabled="hasWaits || !klippyConnected"
         class="mr-2"
         color="secondary">
-          Z_TILT_ADJUST
+          Z_TILT
       </v-btn>
       <v-btn
         v-if="!printerPrinting && printerSupportsQgl"
